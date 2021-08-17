@@ -2,7 +2,11 @@
     margin: 0;
 }
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #3d3d3d;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #fff;
 }
 /*--------------------------TOPO---------------------------*/
 .topo{
@@ -58,20 +62,31 @@ body {
     padding: 40px 20px;
     text-align: center;
 }
-.welcome
-{
+.tamanho-maximo-container{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.secao-container {
     text-align: center;
     margin-bottom: 50px;
     padding-top: 50px;
+  }
+.secao-container h2 {
+    font-size: 32px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+img{
+    width: 100%;
 }
 .quartos {
     display: flex;
     justify-content: space-between;
-    max-width: 1024px;
   }
   .quarto {
     margin-right: 30px;
     padding-bottom: 20px;
+    max-width: 1024px;
     border-bottom: 2px solid #00836a;
     text-decoration: none;
     color: #3d3d3d;
@@ -83,4 +98,68 @@ body {
   }
   .quarto a p {
     text-align: center;
+  }
+
+.descricoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 50px;
+  }
+.descricao {
+    display: flex;
+    width: 45%;
+    margin: 0 10px;
+    align-items: center;
+    justify-content: space-between;
+  }
+.descricao-img {
+    width: 100px;
+    height: 113px;
+    object-fit: cover;
+    margin-left:10px;
+  }
+/*---------------------------Rodapé-------------------*/
+.rodape-copyright{
+    text-align: center;
+    border-top: 1px solid #3b7863;
+    color: #fff;
+    font-weight: bold;
+    padding: 20px;
+    width: 100%;
+}
+.rodape-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.rodape-info {
+    width: 23%;
+    display: flex;
+    align-items: center;
+  }
+
+.rodape{
+    background-color: #49997d;
+    color:#fff;
+}
+
+.rodape h4{
+    font-size: 22px;
+}
+.rodape-link{
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  .rodape-icone {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+
+  .rodape-info a{
+    text-decoration: none;
+    color: #fff;
   }
